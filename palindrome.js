@@ -1,10 +1,14 @@
 // check if a number is a palindrome
 
-function isPalindrome(num) {
-  if (typeof num !== "number") return "Input must be a number";
+function isPalindrome(input) {
+  // if string, get rid of potential spaces
+  if (typeof input === "string") {
+    input = input.replace(/\s/g, '')
+  }
+
   if (
-    num.toString().split("").reverse().join("") ===
-    num.toString().split().join("")
+    input.toString().split("").reverse().join("") ===
+    input.toString().split().join("")
   ) {
     return true;
   } else {
@@ -12,4 +16,4 @@ function isPalindrome(num) {
   }
 }
 
-console.log(isPalindrome('hello'));
+console.log(isPalindrome("nurses run"));
