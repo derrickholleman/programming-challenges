@@ -3,7 +3,7 @@
 function isPalindrome(input) {
   // if string, get rid of potential non-letter characters
   if (typeof input === "string") {
-    input = input.replace(/[^\w]/g, '')
+    input = input.replace(/[^^0-9a-z]/g, '')
   }
 
   if (
