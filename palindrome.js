@@ -1,20 +1,14 @@
 // check if a number is a palindrome
 
-
-
 function isPalindrome(input) {
-  // if string, get rid of potential spaces
+  // if string, get rid of potential non-letter characters
   if (typeof input === "string") {
     input = input.replace(/[^\w]/g, '')
   }
-  // if number, change to string and remove any commas
-  if (typeof input === "number") {
-    input = input.toString().replace(/,/g, '')
-  }
 
   if (
-    input.toString().split("").reverse().join("").toLowerCase() ===
-    input.toString().split().join("").toLowerCase()
+    input.split("").reverse().join("").toLowerCase() ===
+    input.split().join("").toLowerCase()
   ) {
     return true;
   } else {
@@ -22,4 +16,4 @@ function isPalindrome(input) {
   }
 }
 
-console.log(isPalindrome("A man, a plan, a canal: Panama"));
+console.log(isPalindrome("1,0001"));
