@@ -3,7 +3,7 @@
 function isPalindrome(input) {
   // if string, get rid of potential non-letter characters
   if (typeof input === "string") {
-    input = input.replace(/[^^0-9a-z]/g, '')
+    input = input.replace(/[^0-9a-z]/g, '')
   }
 
   if (
@@ -16,4 +16,4 @@ function isPalindrome(input) {
   }
 }
 
-console.log(isPalindrome("1,0001"));
+console.log(isPalindrome("1_0001"));
