@@ -1,10 +1,8 @@
 // check if a number is a palindrome
 
 function isPalindrome(input) {
-  // if string, get rid of potential non-letter characters
-  if (typeof input === "string") {
-    input = input.replace(/[^0-9a-z]/g, '')
-  }
+  // get rid of potential non-letter characters
+  input = input.replace(/[^0-9a-z]/g, "");
 
   if (
     input.split("").reverse().join("").toLowerCase() ===
@@ -16,4 +14,4 @@ function isPalindrome(input) {
   }
 }
 
-console.log(isPalindrome("1_0001"));
+console.log(isPalindrome("nurses---run,"));
