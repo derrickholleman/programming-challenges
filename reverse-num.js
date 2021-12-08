@@ -7,4 +7,4 @@ function sortNum(num) {
     .sort((a, b) => b - a)
     .join("");
 }
-console.log(sortNum(97584));
+console.log(sortNum(9090909075));
