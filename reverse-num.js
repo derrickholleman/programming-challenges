@@ -1,4 +1,4 @@
-// sorts number from lowest to highest integer within the number
+// sorts number from highest to lowest integer within the number
 
 function sortNum(num) {
   return num
